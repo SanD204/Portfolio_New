@@ -16,7 +16,9 @@
 <body>
     <section class="home">
         <nav>
-            <div class="nav-links">
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -26,15 +28,16 @@
                     <li><a href="reach.html">REACH ME</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
     <div class="text-box">
         <h1>My Portfolio</h1>                                         ‎ </p>
-        <p>Hello, I'm Sanyog Dani. I'm passionate about learning and exploring the world of programming. <br> I'm currently on a journey to become a programmer and <br> am excited to connect with fellow enthusiasts, share knowledge, and collaborate on exciting projects. <br> Let's code and learn together!</p>
-        <img src="images/pic.jpg"> 
+        <p>Hello, I'm Sanyog Dani. I'm passionate about learning and exploring <br> the world of programming. I'm currently on a journey to become <br> a programmer and am excited to connect with fellow enthusiasts, <br>share knowledge,and collaborate on exciting projects.Let's code and learn together!</p>
+    
         <p>Sanyog Dani <br> RA2211031010087 <br> CSE-IT V1 Section NWC Department
         </p>
         <a href="https://github.com/SanD204"> <button class="hero-btn">CheckOut My Work</button></a>                                 ‎ </p>
-        <p>This is My Personal Portfolio Website Designed by me. <br> This Site is still in developing phase !! You can Check my other work from the above GitHub Button <br> Feel Free to Contact me for any project related collaboration or ideas from the Reach Me Section !!!</p>
+        <p>This is My Personal Portfolio Website Designed by me. <br> This Site is still in developing phase !! You can Check <br> my other work from the above GitHub Button Feel Free to Contact me <br> for any project related collaboration or ideas from the Reach Me Section !!!</p>
     </div>
     <div class="footer">
         <p>Made with <i class="fa fa-heart-o"></i> By Sanyog Dani</p>
@@ -46,6 +49,19 @@
         <i class="fa fa-github"></i>
     </div>
     </section>
+    
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
 
 </body>
 </html>

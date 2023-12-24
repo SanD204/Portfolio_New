@@ -16,7 +16,9 @@
 <body>
     <section class="edu">
         <nav>
-            <div class="nav-links">
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -26,6 +28,7 @@
                     <li><a href="reach.html">REACH ME</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
         <div class="edu-head">
             <h1>My Education</h1>
@@ -54,5 +57,17 @@
         <i class="fa fa-github"></i>
     </div>
     </section>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
 </body>
 </html>

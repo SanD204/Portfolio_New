@@ -16,7 +16,9 @@
 <body>
     <section class="about">
         <nav>
-            <div class="nav-links">
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -26,16 +28,16 @@
                     <li><a href="reach.html">REACH ME</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
     <div class="text-box">
         <h1>About Me</h1>
         <p>       <br> As an individual with a genuine passion for coding and a solid
-            foundation in basic programming concepts, <br> I am excited about the
-            opportunity to contribute to your team and enhance my skills in a
-            professional setting. <br> Myy enthusiasm
-            for coding and my eagerness to learn and grow are unmatched. <br>         <br> Through personal projects
-            and coursework, I have developed a strong attention to detail and <br>
-            a methodical approach to problem-solving, skills that I believe are
+            foundation <br> in basic programming concepts. I am excited about the
+            opportunity to contribute <br> to your team and enhance my skills in a
+            professional setting. <br> My enthusiasm for coding and my eagerness to learn and grow are unmatched. <br>  <br> Through personal projects
+            and coursework, I have developed a <br> strong attention to detail and
+            a methodical approach to problem-solving, <br> skills that I believe are
             essential for success in a coding-intensive environment.     <br>    <br>
         </p>
         <h2>Skills :- C/C++ , JAVA , PYTHON , HTML , CSS , MYSQL</h2>
@@ -55,5 +57,17 @@
         <i class="fa fa-github"></i>
     </div>
     </section>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
 </body>
 </html>
